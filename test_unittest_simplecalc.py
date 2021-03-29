@@ -12,3 +12,17 @@ class CalcTest(unittest.TestCase):
 
     def test_add(self): # Naming convetion - using test in the name of our function will let python interpret know that this needs to be tested
         # 2 + 2 = 4 outcome is True
+        self.assertEqual(self.calc.add(2, 4), 6)
+        # this test is checking if 2+4=6 that would be true, if true test will pass
+
+    def test_subtract(self):
+        self.assertEqual(self.calc.subtract(4, 2), 2)
+        # This tests the value as 4-2=2 to be True the test passes
+
+    def test_multiply(self):
+        self.assertEqual(self.calc.multiply(2, 2), 4)
+        # This tests the value as 2*2=4 to be True the test passes
+
+    def test_divide(self):
+        self.assertEqual(self.calc.divide(15, 3), 5)
+        # This tests the value as 15/3=5 to be True the test passes
